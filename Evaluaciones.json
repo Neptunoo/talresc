@@ -1,0 +1,39 @@
+{
+  "evaluador": {
+    "id": 1,
+    "nombre": "Manuel Armijo Tapia",
+    "tenant": "InovaBiz"
+  },
+  "mis_encuestas": [
+    {
+      "evaluado": {
+        "id": "1",
+        "nombre": "Manuel Armijo Tapia",
+        "tenant": "InovaBiz"
+      },
+      "evaluacion": {
+		    "id_evaluacion": "1",
+		    "id": "213218939821-213213-2132",
+        "nombre": "Evaluacón de Clima",
+        "descripcion": "Autoevaluación o evaluación de aspectos generales enfocados a opiniones propias acerca de su propio trabajo o puesto",
+        "estado": "No Iniciada",
+        "tenant": "InovaBiz"
+      }
+    },
+	{
+      "evaluado": {
+        "id": "2",
+        "nombre": "Christian Guevara",
+        "tenant": "InovaBiz"
+      },
+      "evaluacion": {
+		    "id_evaluacion": "1",
+		    "id": "213218939821-213213-21323",
+        "nombre": "Evaluacón de Clima",
+        "descripcion": "Autoevaluación o evaluación de aspectos generales enfocados a opiniones propias acerca de su propio trabajo o puesto",
+        "estado": "No Iniciada",
+        "tenant": "InovaBiz"
+      }
+    }
+  ]
+}
