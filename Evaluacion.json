@@ -1,0 +1,1873 @@
+{
+  "id": "213218939821-213213-2132",
+  "id_evaluacion": 1,
+  "version": "1.0",
+  "name": "Clima",
+  "tenant": "Ballerina",
+  "type": "Clima",
+  "company": "Ballerina",
+  "evaluated": {
+    "id": 21312,
+    "name": "Manuel Armijo"
+  },
+  "evaluator": {
+    "id": 21312,
+    "name": "Manuel Armijo"
+  },
+  "status": {
+    "id": 1,
+    "name": "Pending"
+  },
+  "steps": [
+    {
+      "order": 0,
+      "title": "Bienvenido",
+      "subtitle": "Step 1/6....",
+      "group": [
+        {
+          "order": 0,
+          "title": "Introducción",
+          "slots": [
+            {
+              "id": 1,
+              "title": "Objetivos",
+              "question": "Esta encuesta de opinión, presentada a los trabajadores de __Empresa__ tiene un doble objetivo; por una parte, conocer tu opinión a través de las respuestas a las preguntas que se ofrecen y por otro, establecer planes de acción realistas que permitan trabajar en las áreas de mejoras detectadas",
+              "mandatory": false,
+              "readOnly": true
+            },
+            {
+              "id": 2,
+              "title": "Confidencialidad",
+              "question": "La encuesta es anónima y, por tanto, tus respuestas son estrictamente confidenciales. Las opiniones vertidas en esta encuesta serán recopiladas, procesadas y analizadas por TARGET-DDI, consultora experta en RRHH, con la finalidad exclusiva de obtener datos de carácter estadístico que permitan conocer el nivel de satisfacción de los trabajadores.,La información general solicitada a los encuestados es necesaria para la elaboración de planes de acción adecuados a las necesidades y realidades de cada Gerencia y/o Area.",
+              "mandatory": false,
+              "readOnly": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 1,
+      "title": "Bienvenido",
+      "subtitle": "Step 2/6....",
+      "group": [
+        {
+          "order": 0,
+          "title": "Instrucciones",
+          "slots": [
+            {
+              "id": 1,
+              "title": "Objetivos",
+              "question": "Por favor, lee atentamente cada afirmación y responde reflejando tu opinión. Trata de responder con sinceridad y espontaneidad, pero sin precipitación. Cada afirmación tiene varias alternativas de opinión, codificadas del 1 al 4, desde En Desacuerdo hasta Totalmente de Acuerdo. Para ello tenga presente que:",
+              "mandatory": false,
+              "readOnly": true,
+              "tableDescription": [
+                {
+                  "id": 1,
+                  "answer": "En Desacuerdo",
+                  "description": "Marca En Desacuerdo si consideras que la afirmación representa una situación de nula o muy baja oourrencia (bajo un 25% de frecuencia)"
+                },
+                {
+                  "id": 2,
+                  "answer": "Parcialmente en Desacuerdo",
+                  "description": "Marca Parcialmente en Desacuerdo si consideras que la afirmación representa una situación de baja ocurrencia (bajo un 50% de frecuencia)"
+                },
+                {
+                  "id": 3,
+                  "answer": "De Acuerdo",
+                  "description": "Marca De Acuerdo si consideras que la afirmación representa una situación que ocurre, pero no habitualmente (entre un 50% y un 75% de frecuencia)"
+                },
+                {
+                  "id": 4,
+                  "answer": "Totalmente de Acuerdo",
+                  "description": "Marca Totalmente de Acuerdo si consideras que la afirmación representa una situación de frecuente ocurrencia (sobre un 75% de frecuencia)"
+                }
+              ],
+              "alternatives": [
+                {
+                  "id": 1,
+                  "description": "En Desacuerdo",
+                  "value": "1"
+                },
+                {
+                  "id": 2,
+                  "description": "Parcialmente en Desacuerdo",
+                  "value": "2"
+                },
+                {
+                  "id": 3,
+                  "description": "De Acuerdo",
+                  "value": "3"
+                },
+                {
+                  "id": 4,
+                  "description": "Totalmente de Acuerdo",
+                  "value": "4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Información General",
+      "subtitle": "Step 3/6....",
+      "group": [
+        {
+          "order": 0,
+          "title": "Instrucciones",
+          "slots": [
+            {
+              "id": 1,
+              "title": "",
+              "question": "Te solicitamos identificar tu Gerencia/Área en la siguiente lista desplegable. Ello es necesario para el análisis estadistico elaboración de planes de acción adecuados a las necesidades y realidades de cada área. Por favor, selecciona la opción que corresponda. Solo puedes seleccionar una opción.",
+              "mandatory": true,
+              "answer": {
+                "type": "NestedList",
+                "name": "Gerencia",
+                "multiple": false,
+                "answered": {
+                  "id": 1,
+                  "description": "ADMINISTRACIÓN Y FINANZAS",
+                  "name": "gerencia",
+                  "subanswer": {
+                    "id": 2,
+                    "description": "CONTABILIDAD",
+                    "name": "AREA"
+                  }
+                },
+                "alternatives": [
+                  {
+                    "id": 1,
+                    "description": "ADMINISTRACIÓN Y FINANZAS",
+                    "value": "1",
+                    "subanswer": {
+                      "name": "Area",
+                      "subalternatives": [
+                        {
+                          "id": 1,
+                          "description": "ADMINISTRACIÓN Y FINANZAS",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 2,
+                          "description": "CONTABILIDAD",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 3,
+                          "description": "CONTROL DE GESTIÓN",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 4,
+                          "description": "FINANZAS",
+                          "value": "1",
+                          "visible": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "description": "COMERCIAL",
+                    "value": "2",
+                    "subanswer": {
+                      "name": "Area",
+                      "subalternatives": [
+                        {
+                          "id": 1,
+                          "description": "VENTAS",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 2,
+                          "description": "KAM",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 3,
+                          "description": "MERCHANDISING",
+                          "value": "1",
+                          "visible": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 3,
+                    "description": "GERENCIA GENERAL",
+                    "value": "3",
+                    "subanswer": {
+                      "name": "Area",
+                      "subalternatives": [
+                        {
+                          "id": 1,
+                          "description": "GERENCIA GENERAL",
+                          "value": "1",
+                          "visible": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 4,
+                    "description": "HOLGREI",
+                    "value": "4",
+                    "subanswer": {
+                      "name": "Area",
+                      "subalternatives": [
+                        {
+                          "id": 1,
+                          "description": "HOLGREI",
+                          "value": "1",
+                          "visible": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 5,
+                    "description": "MARKETING",
+                    "value": "5",
+                    "subanswer": {
+                      "name": "Area",
+                      "subalternatives": [
+                        {
+                          "id": 1,
+                          "description": "MARKETING",
+                          "value": "1",
+                          "visible": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 6,
+                    "description": "OPERACIONES",
+                    "value": "6",
+                    "subanswer": {
+                      "name": "Area",
+                      "subalternatives": [
+                        {
+                          "id": 1,
+                          "description": "CONTROL DE CALIDAD",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 2,
+                          "description": "DIRECCIÓN TÉCNICA",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 3,
+                          "description": "GERENCIA DE OPERACIONES",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 4,
+                          "description": "MANTENIMIENTO",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 5,
+                          "description": "SUBGERENCIA PRODUCCIÓN (ENVASADO Y FABRICACIÓN)",
+                          "value": "1",
+                          "visible": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 7,
+                    "description": "SUPPLY CHAIN",
+                    "value": "7",
+                    "subanswer": {
+                      "name": "Area",
+                      "subalternatives": [
+                        {
+                          "id": 1,
+                          "description": "BODEGA MATERIAS PRIMAS AEW Y EXPEDICIÓN",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 2,
+                          "description": "COMEX",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 3,
+                          "description": "COMPRAS",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 4,
+                          "description": "LOGÍSTICA",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 5,
+                          "description": "MATERIAS PRIMAS",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 6,
+                          "description": "PRODUCTO TERMINADO",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 7,
+                          "description": "SOP",
+                          "value": "1",
+                          "visible": true
+                        },
+                        {
+                          "id": 8,
+                          "description": "SUBGERENCIA LOGÍSTICA",
+                          "value": "1",
+                          "visible": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": 2,
+              "title": "Antigüedad",
+              "question": "Te solicitamos identificar tu antiguedad en la siguiente lista. Ello es necesario para el analisis de los datos y la elaboración de planes de acción adecuadas a las necesidades y realidad de cada área. Por favor, seleccione la opción que corresponda. Solo puedes seleccionar una opción.",
+              "mandatory": true,
+              "answer": {
+                "type": "List",
+                "name": "antiguedad",
+                "multiple": false,
+                "answered": {
+                  "id": 2,
+                  "value": 2,
+                  "description": "Entre 1 y 3 Años"
+                },
+                "alternatives": [
+                  {
+                    "id": 1,
+                    "value": 1,
+                    "description": "Menos de un Año",
+                    "visible": true
+                  },
+                  {
+                    "id": 2,
+                    "value": 2,
+                    "description": "Entre 1 y 3 Años",
+                    "visible": true
+                  },
+                  {
+                    "id": 3,
+                    "value": 3,
+                    "description": "Entre 3 y 5 Años",
+                    "visible": true
+                  },
+                  {
+                    "id": 4,
+                    "value": 4,
+                    "description": "Más de 5 Años",
+                    "visible": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 3,
+              "title": "Nivel de Cargo",
+              "question": "Te solicitamos identificar tu nivel de cargo en la lista siguiente. Ello es necesario para el análisis estadistico de los datos y la elaboración de planes de acción adecuados a las necesidades y realidades de cada posición. Por favor, seleccione la opción que corresponda. Solo puedes seleccionar una opción.",
+              "mandatory": true,
+              "alternatives": [
+                {
+                  "id": 1,
+                  "value": 1,
+                  "nombre": "Gerente o Subgerente"
+                },
+                {
+                  "id": 2,
+                  "value": 2,
+                  "nombre": "Jefe o Supervisor"
+                },
+                {
+                  "id": 3,
+                  "value": 3,
+                  "nombre": "Profesionales o Administrativos"
+                },
+                {
+                  "id": 4,
+                  "value": 4,
+                  "nombre": "Operarios o Auxiliares"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Encuesta de Satsisfacción",
+      "subtitle": "Step 4/6: Encuesta de satisfacción",
+      "group": [
+        {
+          "order": 0,
+          "title": "",
+          "slots": [
+            {
+              "id": 101,
+              "question": "Tengo plena confianza en el actual equipo directivo (gerentes) de la empresa.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 1
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 102,
+              "question": "En la Gerencia a la que pertenezco las relaciones entre las jefaturas y los trabajadores son buenas.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 2,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 103,
+              "question": "Cuando se trata de acoger problemas, ideas, dudas o simplemente escuchar, mi jefe directo tiene una actitud receptiva.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 3,
+                  "subcategory": 3
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 104,
+              "question": "En la Gerencia a la que pertenezco, los jefes directos promueven que las personas digan lo que piensan.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 1
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 105,
+              "question": "En esta empresa, diferentes equipos de trabajo se ayudan y se apoyan unos a los otros.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 2,
+                  "subcategory": 3
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 106,
+              "question": "En la Gerencia a la que pertenezco, los jefes directos escuchan críticas, opiniones y propuestas de mejoras.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 3
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 107,
+              "question": "En mi Gerencia existe un ambiente de respeto entre las personas",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 108,
+              "question": "La empresa proyecta una buena imagen externa.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 109,
+              "question": "Poseo una adecuada imagen de la empresa, de sus lineamientos y de sus metas y objetivos.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 110,
+              "question": "En la empresa se respetan los procedimientos establecidos logrando con ello excelentes resultados.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 111,
+              "question": "Mi jefe directo tiene un sincero interés en que los empleados se encuentren satisfechos y motivados.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 112,
+              "question": "Yo tengo un sentido de lealtad hacia esta organización.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answered": {
+                "id": 1,
+                "description": "En Desacuerdo",
+                "value": 1
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 113,
+              "question": "Siento que puedo expresar mis ideas y opiniones.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 114,
+              "question": "En general, tengo un buen entendimiento de lo que tengo que hacer en mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 115,
+              "question": "La colaboración entre las distintas áreas facilita mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 116,
+              "question": "Ante una oferta de similares condiciones de contrato y de trabajo yo me quedo en esta empresa.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 117,
+              "question": "Para los temas importantes confío más en la comunicación oficial que en los rumores o comentarios de pasillo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 118,
+              "question": "Los espacios de aporte y participación entregados por mi jefe directo son adecuados.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 119,
+              "question": "La gente en mi trabajo resuelve conflictos cuando estos suceden.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 120,
+              "question": "Tengo clara las responsabilidades y funciones que tengo asignadas.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 121,
+              "question": "Cuando he ejecutado un buen trabajo, mi jefe directo me lo hace saber.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 122,
+              "question": "Cuento con los recursos necesarios (infraestructura, materiales, herramientas de trabajo e información) para desarrollar adecuadamente mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 123,
+              "question": "Los objetivos, metas y funciones de mi cargo son claros para mí.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 124,
+              "question": "Yo estoy bien informado sobre los cambios de la organización que afectan a mi equipo de trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 125,
+              "question": "Mi jefe directo logra organizar y gestionar al equipo en el desarrollo de las actividades.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 126,
+              "question": "El aporte y la importancia de mi trabajo para el logro de los objetivos y resultados de la organización es algo reconocido por mis jefes directos.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 127,
+              "question": "En general, tomando en cuenta todos los factores, en mi área de trabajo, me siento en un ambiente cómodo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 128,
+              "question": "Estoy satisfecho con las condiciones ambientales de mi trabajo (iluminación, espacio y nivel de ruido)",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 129,
+              "question": "Estoy orgulloso de trabajar en la organización.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 130,
+              "question": "La empresa tiene un sistema de beneficios claro y comprensible.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 131,
+              "question": "En mi área de trabajo, se reconoce el aporte que uno realiza.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 132,
+              "question": "Estoy satisfecho con las relaciones interpersonales en mi área.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 133,
+              "question": "En la empresa el grado de incertidumbre y sensación de inestabilidad es bajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 134,
+              "question": "Trabajar en la empresa sería atractivo para muchas personas.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 135,
+              "question": "La gente en mi equipo de trabajo entiende y respeta mis características personales.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 136,
+              "question": "Conozco cuáles son los conceptos (sueldo base, asignaciones y otros beneficios) que integran mi remuneración total.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 137,
+              "question": "La gerencia y/o mi jefe directo me hace sentir que contribuyo a la empresa desde mi puesto de trabajo",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 138,
+              "question": "En mi área de trabajo se respeta la jornada, horarios y turnos laborales.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 139,
+              "question": "Mi jefe directo me prepara y apoya para hacer mejor mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 140,
+              "question": "En mi equipo de trabajo las reuniones son enfocadas y eficientes.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 141,
+              "question": "En mi equipo de trabajo mis ideas y opiniones son apreciadas.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 142,
+              "question": "En mi área es posible terminar todo lo que se tiene que hacer dentro del horario normal de trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 143,
+              "question": "En mi área de trabajo los errores no se esconden y son considerados una oportunidad de aprendizaje.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 144,
+              "question": "La gente en mi equipo de trabajo coopera con los demás para cumplir con el trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 145,
+              "question": "La acogida y recepción del área de RRHH hacia las opiniones y necesidades de los trabajadores es satisfactoria.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 146,
+              "question": "En mi área de trabajo se estimula e incentiva el trabajo en equipo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 147,
+              "question": "En mi equipo de trabajo la gente confía en los otros.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 148,
+              "question": "En la organización no existe burocracia excesiva (exceso de reglas, detalles administrativos y trámites).",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 149,
+              "question": "La relación entre el cuidado de la imagen de la empresa y el cuidado hacia los empleados es equilibrada.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 150,
+              "question": "Mi jefe directo tiene una actuación de respeto personal y profesional hacia las personas de su equipo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 151,
+              "question": "Yo encuentro significado y satisfacción personal en mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 152,
+              "question": "La comunicación desde el personal hacia los niveles superiores (gerentes, jefes, supervisores) es expedita.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 153,
+              "question": "Los jefes de mi empresa trabajan en equipo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 154,
+              "question": "Mi jefe directo me explica adecuadamente los cambios organizativos y sus razones.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 155,
+              "question": "Yo puedo tomar decisiones significativas sobre cómo hacer mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 156,
+              "question": "En mi área se informa a los trabajadores sobre la misión, metas, políticas, decisiones estratégicas y proyectos de la empresa.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 157,
+              "question": "Recibo la colaboración de otros cuando lo necesito.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 158,
+              "question": "En mi equipo de trabajo, a la gente le son asignadas tareas que les permiten usar sus habilidades.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 159,
+              "question": "En mi área la carga y presión de trabajo es adecuada.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 160,
+              "question": "Mi jefe directo delega en mí.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 161,
+              "question": "En mi equipo de trabajo la gente trata de obtener nuevas habilidades y conocimientos.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 162,
+              "question": "Las comunicaciones entre las distintas áreas de la empresa facilitan mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 163,
+              "question": "En mi área directa se trabaja en equipo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 164,
+              "question": "Mi equipo de trabajo usa eficientemente sus recursos, tiempo y presupuestos.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 165,
+              "question": "En la empresa existe integración y colaboración entre mi gerencia y las otras.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 166,
+              "question": "La capacitación que recibo en la empresa me ayuda a realizar mi trabajo cada vez mejor.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 167,
+              "question": "Mi jefe directo me anima a desarrollar nuevas y mejores maneras de hacer las cosas.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 168,
+              "question": "Yo estoy satisfecho con mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 169,
+              "question": "Estoy informado sobre hacia dónde va la empresa, su estrategia y su posición en el sector.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 170,
+              "question": "En mi área la integración y colaboración con otras áreas es adecuada.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 171,
+              "question": "Yo recibo suficiente retroalimentación acerca de qué tan bien lo estoy haciendo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 172,
+              "question": "Sé a quién tengo que acudir para pedir información o apoyo relacionado con mi trabajo.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 175,
+              "question": "La comunicación dentro de mi propia área es adecuada.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 176,
+              "question": "Los jefes en la empresa promueven el trabajo en equipo con las otras áreas y contribuyen a que exista una buena coordinación entre ellas.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 177,
+              "question": "En mi equipo directo de trabajo la gente se hace responsable por su bajo desempeño.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 178,
+              "question": "Los procesos y procedimientos de gestión interna son simples, ágiles y me facilitan el trabajo diario.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            },
+            {
+              "id": 179,
+              "question": "Tomando todo en consideración yo diría que Ballerina es un buen lugar para trabajar.",
+              "mandatory": true,
+              "category": {
+                "value": {
+                  "category": 1,
+                  "subcategory": 2
+                },
+                "type": "factor"
+              },
+              "answer": {
+                "custom": false,
+                "alternatives": {
+                  "id": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Nos interesa tu opinión",
+      "subtitle": "Step 5/6....",
+      "group": [
+        {
+          "order": 0,
+          "title": "Tu opinion nos intersa. Te Solicitamos puedas contestar las siguientes preguntas",
+          "slots": [
+            {
+              "id": 201,
+              "question": "¿Cuáles crees que son las principales fortalezas de trabajar en __Empresa__ ?",
+              "mandatory": true,
+              "answered": {
+                "id": 201,
+                "value": 201,
+                "description": "Compañerismo, crecimiento"
+              },
+              "answer": {
+                "custom": true,
+                "type": "textarea",
+                "multiple": false,
+                "max-length": 500,
+                "min-length": 50
+              }
+            },
+            {
+              "id": 202,
+              "question": "¿Cuales crees que son las principales áreas de mejora de __Empresa__",
+              "mandatory": true,
+              "answer": {
+                "type": "textarea",
+                "multiple": false,
+                "max-length": 500,
+                "min-length": 50
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
