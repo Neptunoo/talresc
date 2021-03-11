@@ -1,13 +1,3 @@
-REQUEST
-header{
-	"jwt":"token" --> Debe tener el Tenant + id_usuario
-}
-body{
-	"id_usuario": 1,
-	"tipo_evaluacion": "Clima"
-}
-
-RESPONSE
 {
   "evaluador": {
     "id": 1,
