@@ -1,0 +1,25 @@
+﻿{
+  "id": 1,
+  "type": "options",
+  "tenant": "Ballerina",
+  "name": "liker",
+  "multiple": false,
+  "options": [
+    {
+      "value": "1",
+      "text": "En Desacuerdo"
+    },
+    {
+      "value": "2",
+      "text": "Parcialmente en Desacuerdo"
+    },
+    {
+      "value": "3",
+      "text": "De Acuerdo"
+    },
+    {
+      "value": "4",
+      "text": "Totalmente de Acuerdo"
+    }
+  ]
+}
